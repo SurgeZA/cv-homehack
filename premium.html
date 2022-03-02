@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head><script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&commit=false"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+                  background: rgb(255, 255, 255);
+                  color: #f1f1f1;
+              }
+  
+              .content {
+                  padding: 16px;
+              }
+  
+              .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+              }
+  
+              #logo{
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 0px;
+                  position: absolute;
+              }
+  
+              #logo img{
+                  width: 100px;
+              }
+  
+              #menu{
+                  font-family: 'Bahnschrift Condensed';
+                  font-size: 30px;
+                  background: rgb(255, 255, 255);
+                  color: rgb(23, 143, 255);
+                  letter-spacing: 2px;
+                  margin-right: -10px;
+                  margin-top: 0px;
+                  float: right;
+                  text-decoration: none;
+                  padding-top: 10px;
+                  padding-right: 80px;
+                  padding-left: 20%;
+              }
+  
+              #menu a {
+                  color: black;
+                  text-decoration: none;
+              }
+  
+              #menu ul{
+                  list-style: none;
+                  
+                  text-decoration: none;
+              }
+  
+              #menu ul li{
+                  display: inline-block;
+                  margin-left: 40px;
+                  font-weight: bold;
+                  text-decoration: none;
+              }
+  
+              #menu ul li:hover{
+                color: dodgerblue;
+              }
+
+
+#header2{
+    color: dodgerblue;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+    padding-top: 120px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Bahnschrift';
+    margin-left: 50px;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  margin-left: 100px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.column2 {
+  margin-top: 70px;
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* #border{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb(64, 169, 211);
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+    font-size: 35px;
+    font-family: 'Bahnschrift';
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Bahnschrift';
+}
+
+#button{
+    width: 60%;
+}
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <div id="container">
+           <div id="logo">
+               <img src="6.png"/>
+           </div>
+       <div id="menu">
+           <ul>
+               <a href="home.html"><li>HOME</li></a>
+               <a href="home.html #spacing"><li>ABOUT</li></a>
+               <a href="home.html #pain" style="color: dodgerblue;"><li>SERVICES</li></a>
+               <a href="home.html #myBtn"><li>CONTACT</li></a>
+               <a href="links.html"><li>RESOURCES</li></a>
+           </ul>
+    </div>             
+    </div>
+   </div>
+
+
+    <div id="header2">
+        <h1>Premium Templates Available</h1>
+        </div>
+        <h2>Our Top Picks</h2>
+    
+
+<div class="row" id="border">
+    
+  <div class="column1" style="background-color:rgb(255, 255, 255);">
+    <div id="cv">
+        
+<img id="myImg" src="cv1.png" style="width:320px; max-width:350px">
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+    </div>
+  </div>
+  <div class="column2" style="background-color:rgb(255, 255, 255);">
+    <h1>#1</h1>
+    <p>Most Popular Template</p> <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">R99</h1>
+    <div id="button">
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <script>
+          function initPayPalButton() {
+            paypal.Buttons({
+              style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'buynow',
+                
+              },
+      
+              createOrder: function(data, actions) {
+                return actions.order.create({
+                  purchase_units: [{"amount":{"currency_code":"USD","value":6.48}}]
+                });
+              },
+      
+              onApprove: function(data, actions) {
+                return actions.order.capture().then(function(orderData) {
+                  
+                  // Full available details
+                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+      
+                  // Show a success message within this page, e.g.
+                  const element = document.getElementById('paypal-button-container');
+                  element.innerHTML = '';
+                  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+      
+                  // Or go to another URL:  actions.redirect('thank_you.html');
+                  
+                });
+              },
+      
+              onError: function(err) {
+                console.log(err);
+              }
+            }).render('#paypal-button-container');
+          }
+          initPayPalButton();
+        </script>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<hr><br><br><br>
+
+<div class="row">
+    
+    <div class="column1" style="background-color:rgb(255, 255, 255);">
+      <div id="cv">
+          <img src="cv6.png" style="width: 320px;">
+      </div>
+    </div>
+    <div class="column2" id="border" style="background-color:rgb(255, 255, 255);">
+      <h1>#2</h1>
+      <p>
+          Coming Soon!
+      </p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <hr><br><br><br>
+  
+  <div class="row">
+    
+    <div class="column1" style="background-color:rgb(255, 255, 255);">
+      <div id="cv">
+          <img src="cv4.png" style="width: 320px;">
+      </div>
+    </div>
+    <div class="column2" id="border" style="background-color:rgb(255, 255, 255);">
+      <h1>#3</h1>
+      <p>
+        Coming Soon!
+      </p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <hr>
+</body>
+</html>

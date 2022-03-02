@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head><script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&commit=false"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+                  background: rgb(255, 255, 255);
+                  color: #f1f1f1;
+              }
+  
+              .content {
+                  padding: 16px;
+              }
+  
+              .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+              }
+  
+              #logo{
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 0px;
+                  position: absolute;
+              }
+  
+              #logo img{
+                  width: 100px;
+              }
+  
+              #menu{
+                  font-family: 'Bahnschrift Condensed';
+                  font-size: 30px;
+                  background: rgb(255, 255, 255);
+                  color: rgb(23, 143, 255);
+                  letter-spacing: 2px;
+                  margin-right: -10px;
+                  margin-top: 0px;
+                  float: right;
+                  text-decoration: none;
+                  padding-top: 10px;
+                  padding-right: 80px;
+                  padding-left: 20%;
+              }
+  
+              #menu a {
+                  color: black;
+                  text-decoration: none;
+              }
+  
+              #menu ul{
+                  list-style: none;
+                  
+                  text-decoration: none;
+              }
+  
+              #menu ul li{
+                  display: inline-block;
+                  margin-left: 40px;
+                  font-weight: bold;
+                  text-decoration: none;
+              }
+  
+              #menu ul li:hover{
+                color: dodgerblue;
+              }
+
+
+#header2{
+    color: rgb(138, 138, 138);
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+    padding-top: 60px;
+}
+h2{
+    font-size: 40px;
+    color: dodgerblue;
+    font-family: 'Bahnschrift';
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  margin-left: 100px;
+  padding-left: 50px;
+}
+.column2 {
+  margin-top: 70px;
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* #border{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb(64, 169, 211);
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+    padding-top: 20px;
+    margin-left: 50px;
+    font-size: 85px;
+    font-family: 'Bahnschrift';
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.212);
+    letter-spacing: 0.1em;
+}
+
+li{
+    font-size: 20px;
+    font-family: 'Bahnschrift';
+}
+
+#column3{
+overflow: visible;
+width: 90%;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <div id="container">
+           <div id="logo">
+               <img src="6.png"/>
+           </div>
+       <div id="menu">
+           <ul>
+               <a href="home.html"><li>HOME</li></a>
+               <a href="home.html #spacing"><li>ABOUT</li></a>
+               <a href="home.html #pain" style="color: dodgerblue;"><li>SERVICES</li></a>
+               <a href="home.html #myBtn"><li>CONTACT</li></a>
+               <a href="links.html"><li>RESOURCES</li></a>
+           </ul>
+    </div>             
+    </div>
+   </div>
+
+
+    <div id="header2">
+        <h1>Platinum Pass</h1>
+        </div>
+    
+
+<div class="row" id="border">
+    
+  <div class="column1" style="background-color:rgb(255, 255, 255);">
+    <div class="new">
+        <div class="columns" id="column3">
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <img src="cv3.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="cv2.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="cv1.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="cv4.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="cv5.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="cv6.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="cv7.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              
+            </div>
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2500); 
+            }
+            </script>
+        </div>
+    </div>
+  </div>
+  <div class="column2" style="background-color:rgb(255, 255, 255);">
+    <h2>COMING SOON!</h2>
+    <ul>
+    <li>Exclusive CV Templates to choose from</li>
+    <li>Job Readiness Workshop</li>
+    <li>One on One Consultation Session</li>
+    </ul>
+    <h3 style="font-size: 25px; font-family: bahnschrift;margin-left: 25px;">R300</h3>
+
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<hr>
+
+</body>
+</html>
